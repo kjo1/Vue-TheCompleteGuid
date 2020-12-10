@@ -20,8 +20,11 @@
       <p>YOUR AGE: {{ age }}</p>
       <!-- 3) Output your age + 5 -->
       <p>YOUR AGE in 5 years: {{ age + 5 }}</p>
+      <!-- added after watching solution -->
+      <p>YOUR AGE in 5 years: {{ calculateAge() }}</p>
       <!-- 4) Output a random number (0 to 1) -->
-      <p>Favorite Number: RANDOM NUMBER BETWEEN 0 AND 1: <br/>{{ favNumber }}<br/>{{ ranNum() }}</p>
+      <p>Favorite Number: RANDOM NUMBER BETWEEN 0 AND 1: <br/>{{Math.random()}}<br/>{{ favNumber }}<br/>{{ ranNum() }}</p>
+      <!-- <br/>{{Math.random()}} added after watching solution -->
       <div>
         <!-- 5) Display some image you found via Google -->
         <img v-bind:src="imgLink" style="max-width: 500px; min-width: 500px;"/>
