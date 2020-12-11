@@ -18,8 +18,17 @@ const app = Vue.createApp({
         },
         resetInput() {
             this.name = '';
-        },
-        outputFullname() {
+        }
+        // outputFullname() {
+        // console.log('Running again...');
+        //     if (this.name === '') {
+        //         return '';
+        //     }
+        //     return this.name + ' ' + 'Lastname';
+    },
+    computed: {
+        fullname() {
+            console.log('Running again...');
             if (this.name === '') {
                 return '';
             }
