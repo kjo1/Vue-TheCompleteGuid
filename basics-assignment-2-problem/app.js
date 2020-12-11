@@ -12,8 +12,8 @@ const app = Vue.createApp({
     setOutput1(event) {
       this.userInput = event.target.value;
     },
-    setOutput2(event) {
-      this.confirmedUserInput = event.target.value;
+    setOutput2() {
+      this.confirmedUserInput = this.userInput;
     },
   },
 });
