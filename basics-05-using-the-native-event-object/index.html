@@ -18,7 +18,9 @@
   <section id="events">
     <h2>Events in Action</h2>
     <button v-on:click="add(10)">Add 10</button>
-    <button v-on:click="reduce(5)">Subtract 5</button>
+    <button @click="reduce(5)">Subtract 5</button>
+    <!-- v-on:click and @click are the same -->
+    <!-- as well as v-bind:value and :value -->
     <p>Result: {{ counter }}</p>
     <input type="text" v-model="name">
     <input type="text" v-model="lastName">
