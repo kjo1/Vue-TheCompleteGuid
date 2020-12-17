@@ -14,13 +14,20 @@ const app = Vue.createApp({
         // },
     },
     watch: {
-        number(value) {
-            if (value > 0) {
-                const that = this;
-                setTimeout(function () {
-                    that.number = 0;
-                }, 5000);
-            }
+        // number(value) {
+        //     if (value > 0) {
+        //         const that = this;
+        //         setTimeout(function () {
+        //             that.number = 0;
+        //         }, 5000);
+        //     }
+        // },
+        //watch computer property
+        result() {
+            const that = this;
+            setTimeout(function () {
+                that.number = 0;
+            }, 5000);
         },
     },
     computed: {
@@ -30,7 +37,8 @@ const app = Vue.createApp({
             } else if (this.number > 37) {
                 return 'Too much!';
             } else if (this.number === 37) {
-                return 37;
+                // return 37;
+                return this.number;
             } else return '';
         },
     },
