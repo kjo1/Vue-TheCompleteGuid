@@ -12,9 +12,9 @@ const app = Vue.createApp({
             if (value > 50) {
                 const that = this;
                 setTimeout(function () {
-                    this.counter = 0;
+                    that.counter = 0;
                 }, 2000);
-                this.counter = 0;
+                // this.counter = 0;
             }
         },
         //     name(value) {
