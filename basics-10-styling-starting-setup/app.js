@@ -17,6 +17,14 @@ const app = Vue.createApp({
             }
         },
     },
+    computed: {
+        // do this way when you have more complex dynamic code classes
+        boxAClasses() {
+            {
+                return { select: this.boxASelected };
+            }
+        },
+    },
 });
 
 app.mount('#styling');
