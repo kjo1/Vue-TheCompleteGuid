@@ -17,12 +17,11 @@
   </header>
   <section id="user-goals">
     <h2>My course goals</h2>
-    <input type="text" />
+    <input type="text" v-model="inputGoalValue" />
     <button @click="addGoal">Add Goal</button>
-    <p v-show="goals.length === 0">No goals have been added yet - please start adding some!</p>
-    <!-- use v-show when there are lots of toggle to show and hide to not affect performance  -->
-    <ul v-show="goals.length > 0">
-      <li>Goal</li>
+    <p v-if="goals.length === 0">No goals have been added yet - please start adding some!</p>
+    <ul v-else>
+      <li v-for="goal in goals">{{ goal }}</li>
     </ul>
   </section>
 </body>
