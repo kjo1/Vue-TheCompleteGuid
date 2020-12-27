@@ -23,6 +23,7 @@
     <button @click="addTask">Add Task</button>
     <h3>{{status}}</h3>
     <ul v-if="!show">
+      <!-- v-show also can be used here -->
       <!-- 2) Output the list of tasks here -->
       <li v-for="(task, index) in tasks" :key="task">{{ ++index }}. {{ task }}</li>
     </ul>
@@ -30,6 +31,8 @@
     <!-- BONUS: Also update the button caption -->
     <hr />
     <button @click="toggle">{{btnLabel}} List</button>
+    <button @click="toggle">{{ show ? 'Show' : 'Hide'}} List</button>
+    <button @click="toggle">{{ btnCaption }}</button>
   </section>
 </body>
 
