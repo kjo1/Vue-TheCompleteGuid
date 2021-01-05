@@ -17,6 +17,7 @@ const app = Vue.createApp({
 
 app.mount('#app');
 
+<<<<<<< HEAD
 const app2 = Vue.createApp({
     data() {
         return {
@@ -27,6 +28,8 @@ const app2 = Vue.createApp({
 
 app2.mount('#app2');
 
+=======
+>>>>>>> f4fb98a7a6d58237b157ea33863b6dfc66bd651c
 // .....
 
 const data = {
